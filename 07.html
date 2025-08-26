@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style02.css">
+</head>
+
+<body>
+    <p>Click the button below to enter element into full mode</p>
+    <br>
+    <div class="box" id="fullscreenBox">
+        
+    </div>
+
+    <script>
+        const box = document.getElementById('fullscreenBox');
+        box.addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                box.requestFullscreen();
+            } else {
+                document.exitFullscreen();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

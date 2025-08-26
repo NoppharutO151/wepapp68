@@ -1,0 +1,86 @@
+.div01 {
+    border: 2px solid gray;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 25px;
+    /* ให้เท่าความสูงของรูป (ปรับให้พอดี) */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.blur-box {
+    background: rgba(255, 255, 255, 0.3);
+    /* โปร่งใส */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    /* สำหรับ Safari */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.container03 {
+    background-color: #0a2a5f;
+    color: white;
+    width: 300px;
+    height: 400px;
+    border-radius: 16px;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.group-header {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.name {
+    padding-left: 42px;
+    margin-bottom: 6px;
+}
+
+.navbar {
+  padding: 15px 30px;
+  border-radius: 8px;
+}
+
+.nav-item {
+  color: black;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.nav-item:hover,
+.nav-item:focus {
+  background-color: orange;
+  color: #0a2a5f;
+  transform: scale(1.1) rotate(-1deg);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+

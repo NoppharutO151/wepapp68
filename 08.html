@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Popout Menu</title>
+<style>
+  .menu-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .menu-button {
+    background: rebeccapurple;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  .menu {
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 160px;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+  }
+
+  .menu a:hover,
+  .menu a:focus {
+    background: #eee;
+  }
+
+  .menu-container:hover .menu,
+  .menu-container:focus-within .menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+</style>
+
+</head>
+<body>
+
+<div class="menu-container">
+  <button class="menu-button">Menu</button>
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">Profile</a>
+    <a href="#">Settings</a>
+  </div>
+</div>
+
+</body>
+</html>
